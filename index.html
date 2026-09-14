@@ -4,67 +4,48 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Волонтёр и социальный активист</title>
+        <title>Музыкант и звукорежиссёр</title>
         <style>
-
             body {
+                background-color: #000000;
+                color: #ffffff;
                 font-family: Arial, sans-serif;
-                background-color: #ffffff;
-                color: #333333;
             }
-
-            header {
-                background-color: #c12424;
-                color: #ffffff;
-                padding: 20px;
+            header, footer {
+                background-color: #241135;
                 text-align: center;
+                padding: 10px;
             }
-
-            footer {
-                background-color: #c12424;
-                color: #ffffff;
-                padding: 20px;
-                text-align: center;
-            }
-
             nav {
                 text-align: center;
-                padding: 5px;
+                padding: 10px;
             }
-
             nav a {
-                color: #c12424;
+                color: #b93b8f;
+                margin: 0 10px;
             }
-
-            ul li {
-                padding: 5px;
-            }
-
-            ol li {
-                padding: 5px;
-            }
-
             main {
                 display: flex;
             }
-
             .main {
-               flex: 3; 
+                flex: 3;
             }
-
             aside {
                 flex: 1;
+                background-color: #1a0b26;
+                padding: 10px;
             }
-
-
+            section {
+                margin-bottom: 20px;
+            }
         </style>
-    </head>  
+    </head>    
 
     <body>
 
         <header>
             <h1>Агнещиков Артём</h1>
-            <h2>Волонтёр и социальный активист</h2>
+            <h2>Музыкант и звукорежиссёр</h2>
         </header>
 
         <nav>
@@ -74,35 +55,69 @@
         </nav>
 
         <main>
-                        
+                
             <div class="main">
 
                 <img src="files/avatar.jpg" alt="Фотография" width="150" height="150">
 
                 <section id="skills">
                     <h3>Навыки</h3>
-
                     <ul>
-                        <li>Сертифицированный борец с бедностью через социальные сети</li>
-                        <li>Аналитик эффективности позитивных мыслей</li>
-                        <li>Переговорщик с бездомными о позитивном мышлении</li>
-                        <li>Эксперт по борьбе с токсичностью в соцсетях</li>
+                        <li>Работа в DAW: уверенное владение FL Studio и Ableton Live для написания и аранжировки треков</li>
+                        <li>Инструментальные навыки: игра на гитаре и базовые навыки владения клавишными инструментами</li>
+                        <li>Звукорежиссура: сведение и мастеринг музыкальных инструментов и готовых композиций</li>
+                        <li>Композиция: написание оригинальных музыкальных композиций в различных жанрах.</li>
                     </ul>
                 </section>
 
                 <section id="projects">
-                    <h3>Проекты</h3>
-
+                    <h2>Проекты</h2>
                     <ol>
-                        <li>Обучаю волонтёров отправлять мемы в зоны бедствия</li>
-                        <li>Провожу слушания с угнетёнными</li>
-                        <li>Организатор петиции против плохой погоды</li>
+                        <li>
+                            Завтра beat (Eb Minor 150 bpm)
+                            <br>
+                            <img src="files/militantum.jpg" alt="Обложка" width="40" height="40">
+                            <audio controls>
+                                <source src="files/zavtra.mp3" type="audio/mpeg">
+                            </audio>
+                        </li>
+                        <li>
+                            Летник beat (C Minor 130 bpm)
+                            <br>
+                            <img src="files/letnik.jpg" alt="Обложка" width="40" height="40">
+                            <audio controls>
+                                <source src="files/letnik.mp3" type="audio/mpeg">
+                            </audio>
+                        </li>
+                        <li>
+                            Barry Dylan beat (D Minor 115 bpm 450hz)
+                            <br>
+                            <img src="files/barrydylan.png" alt="Обложка" width="40" height="40">
+                            <audio controls>
+                                <source src="files/barry.mp3" type="audio/mpeg">
+                            </audio>
+                        </li>
+                        <li>
+                            Martine Rose beat (F# Major 112 bpm)
+                            <br>
+                            <img src="files/martine.jpg" alt="Обложка" width="40" height="40">
+                            <audio controls>
+                                <source src="files/martine.mp3" type="audio/mpeg">
+                            </audio>
+                        </li>
+                        <li>
+                            Web 2.0 beat (G# Minor 126 bpm 450hz)
+                            <br>
+                            <img src="files/web20.jpg" alt="Обложка" width="40" height="40">
+                            <audio controls>
+                                <source src="files/web 2.0.mp3" type="audio/mpeg">
+                            </audio>
+                        </li>
                     </ol>
                 </section>
 
                 <div id="contact">
                     <h3>Обратная связь</h3>
-
                     <form action="#" method="post">
                         <p>
                             <input type="text" name="name" placeholder="Ваше имя">
@@ -113,15 +128,15 @@
                         <p>
                             <textarea name="message" placeholder="Ваше сообщение" rows="4"></textarea>
                         </p>
-                    <button type="submit">Отправить</button>
+                        <button type="submit">Отправить</button>
                     </form>
                 </div>
 
             </div>
 
             <aside>
-                <h3>Социальная проблема, которая меня волнует:</h3>
-                <p>Меня волнуют социальное неравенство и угнетение людей, поэтому я собрал 500.000 подписей за их отмену, но до сих пор не знаю, куда их подать.</p>
+                <h3>О себе:</h3>
+                <p>Предпочитаю работать на стыке живого и цифрового звучания: в арсенале электрогитара и программные синтезаторы. Увлекаюсь глубоким саунд-дизайном и детальной обработкой инструментала: от эмбиента до агрессивной современной музыки.</p>
             </aside>
             
         </main>
@@ -130,6 +145,6 @@
             <p>&copy; 2026 Агнещиков Артём</p>
         </footer>
 
-    </body>  
+    </body> 
 
 </html>
