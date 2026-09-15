@@ -5,39 +5,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Музыкант и звукорежиссёр</title>
+
+        <link rel="stylesheet" href="style.css">
+
         <style>
-            body {
-                background-color: #000000;
-                color: #ffffff;
-                font-family: Arial, sans-serif;
+            #skills ul {
+                list-style-type: square;
+                color: var(--accent-color);
             }
-            header, footer {
-                background-color: #241135;
-                text-align: center;
-                padding: 10px;
-            }
-            nav {
-                text-align: center;
-                padding: 10px;
-            }
-            nav a {
-                color: #b93b8f;
-                margin: 0 10px;
-            }
-            main {
-                display: flex;
-            }
-            .main {
-                flex: 3;
-            }
-            aside {
-                flex: 1;
-                background-color: #1a0b26;
-                padding: 10px;
-            }
-            section {
-                margin-bottom: 20px;
-            }
+            #skills ul li span {
+                color: var(--text-color);
+            }            
         </style>
     </head>    
 
@@ -58,7 +36,7 @@
                 
             <div class="main">
 
-                <img src="files/avatar.jpg" alt="Фотография" width="150" height="150">
+                <img class="avatar" src="files/pictures/avatar.jpg" alt="Фотография">
 
                 <section id="skills">
                     <h3>Навыки</h3>
@@ -66,68 +44,67 @@
                         <li>Работа в DAW: уверенное владение FL Studio и Ableton Live для написания и аранжировки треков</li>
                         <li>Инструментальные навыки: игра на гитаре и базовые навыки владения клавишными инструментами</li>
                         <li>Звукорежиссура: сведение и мастеринг музыкальных инструментов и готовых композиций</li>
-                        <li>Композиция: написание оригинальных музыкальных композиций в различных жанрах.</li>
+                        <li>Композиция: написание оригинальных музыкальных композиций в различных жанрах</li>
                     </ul>
                 </section>
 
                 <section id="projects">
-                    <h2>Проекты</h2>
+                    <h2>Проекты (Remakes)</h2>
                     <ol>
                         <li>
-                            Завтра beat (Eb Minor 150 bpm)
-                            <br>
-                            <img src="files/militantum.jpg" alt="Обложка" width="40" height="40">
-                            <audio controls>
-                                <source src="files/zavtra.mp3" type="audio/mpeg">
-                            </audio>
+                            <div class="track-info">Завтра beat (Eb Minor 150 bpm)</div>
+                            <div class="track-player">
+                                <img src="files/pictures/militantum.jpg" alt="Обложка" width="40" height="40">
+                                <audio controls>
+                                    <source src="files/music/zavtra.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
                         </li>
                         <li>
-                            Летник beat (C Minor 130 bpm)
-                            <br>
-                            <img src="files/letnik.jpg" alt="Обложка" width="40" height="40">
-                            <audio controls>
-                                <source src="files/letnik.mp3" type="audio/mpeg">
-                            </audio>
+                            <div class="track-info">Летник beat (C Minor 130 bpm)</div>
+                            <div class="track-player">
+                                <img src="files/pictures/letnik.jpg" alt="Обложка">
+                                <audio controls>
+                                    <source src="files/music/letnik.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
                         </li>
                         <li>
-                            Barry Dylan beat (D Minor 115 bpm 450hz)
-                            <br>
-                            <img src="files/barrydylan.png" alt="Обложка" width="40" height="40">
-                            <audio controls>
-                                <source src="files/barry.mp3" type="audio/mpeg">
-                            </audio>
+                            <div class="track-info">Barry Dylan beat (D Minor 115 bpm 450hz)</div>
+                            <div class="track-player">
+                                <img src="files/pictures/barrydylan.png" alt="Обложка">
+                                <audio controls>
+                                    <source src="files/music/barry.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
                         </li>
                         <li>
-                            Martine Rose beat (F# Major 112 bpm)
-                            <br>
-                            <img src="files/martine.jpg" alt="Обложка" width="40" height="40">
-                            <audio controls>
-                                <source src="files/martine.mp3" type="audio/mpeg">
-                            </audio>
+                            <div class="track-info">Martine Rose beat (F# Major 112 bpm)</div>
+                            <div class="track-player">
+                                <img src="files/pictures/martine.jpg" alt="Обложка">
+                                <audio controls>
+                                    <source src="files/music/martine.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
                         </li>
                         <li>
-                            Web 2.0 beat (G# Minor 126 bpm 450hz)
-                            <br>
-                            <img src="files/web20.jpg" alt="Обложка" width="40" height="40">
-                            <audio controls>
-                                <source src="files/web 2.0.mp3" type="audio/mpeg">
-                            </audio>
+                            <div class="track-info">Web 2.0 beat (G# Minor 126 bpm 450hz)</div>
+                            <div class="track-player">
+                                <img src="files/pictures/web20.jpg" alt="Обложка">
+                                <audio controls>
+                                    <source src="files/music/web2.0.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
                         </li>
                     </ol>
                 </section>
 
                 <div id="contact">
                     <h3>Обратная связь</h3>
-                    <form action="#" method="post">
-                        <p>
-                            <input type="text" name="name" placeholder="Ваше имя">
-                        </p>
-                        <p>
-                            <input type="email" name="email" placeholder="Ваш email">
-                        </p>
-                        <p>
-                            <textarea name="message" placeholder="Ваше сообщение" rows="4"></textarea>
-                        </p>
+                    <form action="#" method="post" style="display: flex; flex-direction: column; gap: 15px;">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="email" name="email" placeholder="Ваш email">
+                        <textarea name="message" placeholder="Ваше сообщение" rows="5"></textarea>
                         <button type="submit">Отправить</button>
                     </form>
                 </div>
@@ -136,7 +113,7 @@
 
             <aside>
                 <h3>О себе:</h3>
-                <p>Предпочитаю работать на стыке живого и цифрового звучания: в арсенале электрогитара и программные синтезаторы. Увлекаюсь глубоким саунд-дизайном и детальной обработкой инструментала: от эмбиента до агрессивной современной музыки.</p>
+                <p>Предпочитаю работать на стыке живого и цифрового звучания: в наличии электрогитара и программные синтезаторы. Увлекаюсь глубоким саунд-дизайном и детальной обработкой инструментала: от эмбиента до агрессивной современной музыки.</p>
             </aside>
             
         </main>
@@ -144,6 +121,22 @@
         <footer>
             <p>&copy; 2026 Агнещиков Артём</p>
         </footer>
+
+<!-- Временный скрипт для нормальный работы плееров, чтобы не получалось каши из звуков! -->       
+        <script>
+            const audios = document.querySelectorAll('audio');
+            
+            audios.forEach(audio => {
+                audio.addEventListener('play', () => {
+                    audios.forEach(otherAudio => {
+                        if (otherAudio !== audio) {
+                            otherAudio.pause();
+                        }
+                    });
+                });
+            });
+        </script>
+<!-- ---------------------------------------------------------------------------------- -->  
 
     </body> 
 
