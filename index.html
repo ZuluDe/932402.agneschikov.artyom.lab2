@@ -202,21 +202,7 @@
             <p>&copy; 2026 Агнещиков Артём</p>
         </footer>
 
-<!-- Временный скрипт для нормальный работы плееров, чтобы не получалось каши из звуков! -->       
-        <script>
-            const audios = document.querySelectorAll('audio');
-            
-            audios.forEach(audio => {
-                audio.addEventListener('play', () => {
-                    audios.forEach(otherAudio => {
-                        if (otherAudio !== audio) {
-                            otherAudio.pause();
-                        }
-                    });
-                });
-            });
-        </script>
-<!-- ---------------------------------------------------------------------------------- -->  
+        <script src="script.js"></script>
 
     </body> 
 
