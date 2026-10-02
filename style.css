@@ -268,6 +268,11 @@ button[type="submit"]:active {
     transform: scale(0.98);
 }
 
+button[type="submit"]:focus {
+    outline: 2px solid var(--white);
+    background-color: var(--visited-color);
+}
+
 #projects ol li::before,
 #projects ol li::after {
     content: '';
